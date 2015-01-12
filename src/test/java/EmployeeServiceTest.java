@@ -21,8 +21,7 @@ public class EmployeeServiceTest {
     }
 
     @Test
-    public void
-    shouldReturnTrueWhenIncrementOf10PercentageIsGivenSuccessfully() {
+    public void shouldReturnTrueWhenIncrementOf10PercentageIsGivenSuccessfully() {
         PowerMockito.mockStatic(Employee.class);
 
         PowerMockito.doNothing().when(Employee.class);
@@ -34,8 +33,7 @@ public class EmployeeServiceTest {
     }
 
     @Test
-    public void
-    shouldReturnFalseWhenIncrementOf10PercentageIsNotGivenSuccessfully() {
+    public void shouldReturnFalseWhenIncrementOf10PercentageIsNotGivenSuccessfully() {
         PowerMockito.mockStatic(Employee.class);
 
         PowerMockito.doThrow(new IllegalStateException()).
